@@ -3,80 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>diet tracker</title>
+    <title>Diet Tracker</title>
 </head>
 <body>
- <header>
-    <nav class="navigation">
-    <a href="#" class="logo">myfitness</a>
-    <ul class="nav_item">
-    <li class="nav_item">
-        <a href="#">Home</a>
-        <a href="#">Service</a>
-        <a href="#">Reviews</a>
-    </li>
-    </ul>
-      <button class="button">login</button>
-    </nav>
- </header>
-<!--home-->
- <section class="home">
-    <div class="form_container">
-        <i class="fa-solid fa-xmark form_closer"></i>
-        
-        <!--login form-->
-        <div class=" login_form">
-            <form action="#">
-                <h2> Login </h2>
-                <div class="input_box">
-                    <input type="email" placeholder=" email" >
-                    <i class="fa-regular fa-envelope"></i>
-                </div>
-                <div class=" input_box">
-                    <input type="password" placeholder=" password">
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <div class="form-link">
-                    <a href="#" class="forgot_pass">Forgot Password?</a>
-                </div>
-
-        <button class="login-button">Login</button>
-        <div class="signup">
-            <span>Not a member yet?</span> <a href="#" class="Signup">Sign up!</a>
-         </div>
-            </form>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">myfitness</a>
+            <ul class="nav_item">
+                <li class="nav_item">
+                    <a href="#home">Home</a>
+                    <a href="#service">Service</a>
+                    <a href="#reviews">Reviews</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div>
+                <h1>Eat smarter.<br>Live better.</h1>
+                <p>Track your diet, exercise, and health data.</p>
+                <!-- Start Now button that opens login form -->
+                <a href="#" class="main-btn" id="startNowButton">START NOW</a>
+            </div>
+            <div class="image-home">
+                <img src="https://media.post.rvohealth.io/wp-content/uploads/2020/04/green_juice_still_life-1200x628-facebook-1200x628.jpg" alt="Fitness Image">
+            </div>
         </div>
-      <!--signup form--> 
-      <div class=" signup_form">
-        <form action="#">
-            <h2> Sign up </h2>
-            <div class="input_box">
-                <input type="email" placeholder=" email" >
-                <i class="fa-regular fa-envelope"></i>
+        <div class="form_container">
+            <i class="fa-solid fa-xmark form_closer"></i>
+            <!-- Login Form -->
+            <div class="login_form">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="input_box">
+                        <input type="email" placeholder="Email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="form-link">
+                        <a href="#" class="forgot_pass">Forgot Password?</a>
+                    </div>
+                    <button class="login-button">Login</button>
+                    <div class="signup">
+                        <span>Not a member yet?</span> <a href="#" class="Signup">Sign up!</a>
+                    </div>
+                </form>
             </div>
-            <div class=" input_box">
-                <input type="password" placeholder=" Create password">
-                <i class="fa-solid fa-lock"></i>
+            <!-- Signup Form -->
+            <div class="signup_form">
+                <form action="#">
+                    <h2>Sign Up</h2>
+                    <div class="input_box">
+                        <input type="email" placeholder="Email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <button class="signup-button">Sign Up</button>
+                    <div class="signup">
+                        <span>Already have an account?</span> <a href="#" class="Login">Login</a>
+                    </div>
+                </form>
             </div>
-            <div class=" input_box">
-                <input type="password" placeholder=" Confirm password">
-                <i class="fa-solid fa-lock"></i>
-            </div>
-           
+        </div>
+    </section>
 
-    <button class="signup-button">Sign up</button>
-    <div class="signup">
-        <span>Already have an acount?</span> <a href="#" class="Login">Login</a>
-     </div>
-        </form>
-    </div>
-    </div>
-   
- </section>
- <script src="script.js"></script>
+    <section class="Cards" id="service">
+        <h2 class="title">Services</h2>
+    </section>
 
+    <section class="#" id="reviews">
+        <h2 class="title">Reviews</h2>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
