@@ -7,7 +7,7 @@
 }
 
 header{
-background-color: azure;
+background-color: rgb(245, 245, 245);
 position: fixed;
 height: 70px;
 width: 100%;
@@ -18,8 +18,9 @@ a{
     text-decoration: none;
 }
 .logo{
-    font-size: 25px;
-    color: rgb(12, 163, 168);
+    font-size: 40px;
+    color:rgb(29, 153, 120);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .navigation{
 max-width: 1100px;
@@ -37,11 +38,10 @@ margin: 0 auto;
 }
 
 .nav_item  {
-    color: antiquewhite;
     column-gap: 25px;
 }
 .nav_item a{
-    color:  rgb(14, 136, 116);
+    color:  rgb(29, 151, 153);
 }
 .nav_item a:hover{
     color: white;
@@ -58,23 +58,80 @@ margin: 0 auto;
 .button:active{
     transform: scale(0.98);
 }
-/*home*/
 
 .home{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url("https://images.everydayhealth.com/images/everything-you-need-know-about-fitness-1440x810.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color: whitesmoke;
+ 
+  overflow: hidden;
 }
 
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+}
+.image-home{
+    overflow: hidden;
+    position: relative;
+    border-radius: 0 0 0 50px; /* Rounded border on the left side */
+    width: 50%; /* Set width to occupy 30% of the parent container */
+    float: right; /* Float the container to the right */
+    margin-right: 20px; 
+  height: 70%;
+
+}
+
+.image-home img{
+    width: 100%;
+    display: block; /* Ensure the image is displayed as a block element */
+    z-index: 1; /* Ensure the image is above other elements */
+    height: 100%;
+    object-fit: cover; /* Cover the entire container without distortion */
+
+}
+/* start now button*/
+ .main-btn{
+   
+    padding:  6px 30px;
+   
+    border-radius: 6px;
+    cursor: pointer;
+ }
+ .main-btn{
+    transform: scale(1);
+ }
 .home::before {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(253, 255, 254, 0.6); 
+  
     z-index: inherit;
    /* opacity: 0;
     pointer-events: none;
@@ -86,13 +143,32 @@ opacity: 1;
 pointer-events: auto;
 }*/
 
+.main-btn{
+    color: rgb(255, 255, 255);
+    background-color:rgb(37, 133, 101);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: 0.7s ease;
+    padding:  6px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1);
+}
+.main-btn:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+  
+}
 
-/*form*/
+
 .form_container{
     position: fixed;
     top: 50%;
     left:50%;
-    transform:translate(-50%,-50%)/*scale(1.2)*/;
+    transform:translate(-50%,-50%);
     z-index:101 ;
     background: #fff;
     padding: 25px;
@@ -142,7 +218,7 @@ pointer-events: auto;
     height: 40px;
 
 }
-/*field*/
+
 .input_box input{
     height: 100%;
     width:100%;
@@ -159,7 +235,7 @@ pointer-events: auto;
 .input_box input:focus{
     border-color: #53c8b2;
 }
-/*icon*/
+
 .input_box i{
     position: absolute;
     top:50%;
