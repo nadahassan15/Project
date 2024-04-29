@@ -36,26 +36,28 @@
         <div class="form_container">
             <i class="fa-solid fa-xmark form_closer"></i>
             <!-- Login Form -->
-            <div class="login_form">
-                <form action="#">
-                    <h2>Login</h2>
-                    <div class="input_box">
-                        <input type="email" placeholder="Email">
-                        <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <div class="input_box">
-                        <input type="password" placeholder="Password">
-                        <i class="fa-solid fa-lock"></i>
-                    </div>
-                    <div class="form-link">
-                        <a href="#" class="forgot_pass">Forgot Password?</a>
-                    </div>
-                    <button class="login-button">Login</button>
-                    <div class="signup">
-                        <span>Not a member yet?</span> <a href="#" class="Signup">Sign up!</a>
-                    </div>
-                </form>
-            </div>
+          <div class="login_form">
+    <form action="#" id="loginForm">
+        <h2>Login</h2>
+        <div class="input_box">
+            <input type="email" placeholder="Email" id="loginEmail">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="Password" id="loginPassword">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="form-link">
+            <a href="#" class="forgot_pass">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login-button">Login</button>
+        <div id="loginError" style="color: red; display: none;">Wrong email or password!</div>
+        <div class="signup">
+            <span>Not a member yet?</span> <a href="#" class="Signup">Sign up!</a>
+        </div>
+    </form>
+</div>
+
             <!-- Signup Form -->
             <div class="signup_form">
                 <form action="#">
@@ -79,6 +81,13 @@
                 </form>
             </div>
         </div>
+    </section>
+
+    <section class="Cards" id="service">
+        <h2 class="title">Services</h2>
+    </section>
+
+
     </section>
 
     <section class="Cards" id="service">
