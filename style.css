@@ -387,4 +387,37 @@ background-color:whitesmoke;
     src: url('path-to-your-font.woff2') format('woff2'),
          url('path-to-your-font.woff') format('woff');
 }
+.card{
+    width:20.25em;
+    padding:30px;
+    margin:50px;
 
+}
+.info{
+    color:rgb(29, 153, 120);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+text-align: center;
+}
+.content{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.icon{
+    margin-left: 90px;
+}
+
+/*
+div h4 {
+    color: rgb(29, 153, 120);
+    font-size: 19px; 
+    font-weight: bold; 
+}*/
+div p {
+    color: black; 
+    font-size: 15px; 
+
+}
