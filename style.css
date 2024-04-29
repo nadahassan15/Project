@@ -288,3 +288,103 @@ border-radius: 10px;
 .signup_form{
     display: none;
 }
+.Philosophy {
+background-color:whitesmoke;
+    margin: auto;
+    padding: 60px;
+    
+}
+
+.title {
+    text-align: center; 
+    margin-bottom: 70px; 
+    color: #75837e;
+   
+}
+
+.philo {
+    display: flex; 
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    float: left;
+    padding: 5px 2px; 
+    padding: 5px; 
+    margin-bottom: 40px;
+}
+.item-1 img,
+.item-2 img,
+.item-3 img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 30px; 
+}
+.item-1,
+.item-3 {
+    width: 10%; 
+    flex: 0 0 calc(15% - 5px);
+}
+
+.item-2 {
+    flex: 0 0 calc(20% - 5px); 
+    width: 40%;
+}
+.ph-text {
+    flex: 1;
+    margin-left: 40px; 
+
+}
+
+.ph-text p {
+    font-size: 16px; 
+    color: #333; 
+    line-height: 1.5;
+ }
+.ph-text h3 {
+    font-size: 20px; 
+    color: #333; 
+}
+
+
+.footer {
+    background-color: #198d66;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+   
+}
+
+
+.icon {
+    font-size: 24px;
+    text-align: center;
+}
+
+.icon a {
+    color: #ffffff;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer h4 {
+    font-size: 30px; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('path-to-your-font.woff2') format('woff2'),
+         url('path-to-your-font.woff') format('woff');
+}
+
