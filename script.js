@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const loginEmail = document.getElementById("loginEmail");
     const loginPassword = document.getElementById("loginPassword"); // Correct ID for password
     const loginError = document.getElementById("loginError");
-
+    const quizForm = document.getElementById("quizForm");
+    
     // Initially hide the form container and both forms
     formContainer.style.display = "none";
     loginForm.style.display = "none";
@@ -53,7 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
             // Correct email and password, proceed to show a new form or redirect
             alert("Login successful. Loading form...");
             // Example redirect or show new form
-            // window.location.href = 'newform.html';
+            
+            window.location.href = 'quiz.html';
+            
         } else {
             // Wrong email or password
             loginError.style.display = 'block'; // Show the error message
@@ -77,10 +80,33 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
 
         alert("Signup successful. Your details have been saved.");
         // Optionally clear form or redirect
-        window.location.href = 'welcome.html'; // Redirect to a new page
+        window.location.href = 'quiz.html'; // Redirect to a new page
     } else {
         // Display error message if passwords do not match
         signupError.style.display = 'block';
         signupError.textContent = "Passwords do not match!";
     }
+    quizForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        
+        // Get the user's answers from the form
+        const age = document.getElementById("age").value;
+        const gender = document.getElementById("gender").value;
+        const activity = document.getElementById("activity").value;
+        const goal = document.getElementById("goal").value;
+    
+        // Process the user's answers (you can replace this with your logic)
+        const result = {
+            age: age,
+            gender: gender,
+            activity: activity,
+            goal: goal
+        };
+    
+        // Display the result (you can customize this)
+        
+       // alert("Quiz submitted! Here are your answers: \n" + JSON.stringify(result));
+
+        window.location.href = 'index.html';
+    });
 });
