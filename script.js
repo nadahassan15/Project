@@ -110,3 +110,75 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
         window.location.href = 'index.html';
     });
 });
+
+/*water*/
+const addbutton=document.querySelector('.add');
+const removebutton=document.querySelector('.remove');
+const currentcups=document.querySelector('.current-cups');
+const currentliters=document.querySelector('.current-liters');
+const currentpercentage=document.querySelector('.current-percentage');
+const progresarea = document.querySelector('.progress');
+
+
+const MAX_CUPS =10;
+const MIN_CUPS=0;
+let cups=0,
+liters=0,
+percentage=0;
+addbutton.addEventListener("click",addCup);
+removebutton.addEventListener("click", removeCup);
+function addCup() {
+    if (cups < MAX_CUPS) {
+        cups++;
+        liters += 250;
+
+        percentage = (cups / MAX_CUPS) * 100;
+        currentcups.textContent = `${cups}/10`;
+        currentliters.textContent = `${liters / 1000}l/2.5l`;
+        currentpercentage.textContent = `${percentage}%`;
+        progresarea.style.height = `${percentage}%`;
+
+        if (cups === MAX_CUPS) {
+            addbutton.disabled = true;
+        }
+
+       else {
+            removebutton.disabled = false;
+        }
+    }
+}
+
+function removeCup() {
+    if (cups > MIN_CUPS) {
+        cups--;
+        liters -= 250;
+        percentage = (cups / MAX_CUPS) * 100;
+        currentcups.textContent = `${cups}/10`;
+        currentliters.textContent = `${liters / 1000}l/2.5l`;
+        currentpercentage.textContent = `${percentage}%`;
+        progresarea.style.height = `${percentage}%`;
+
+        if (cups === MIN_CUPS) {
+            removebutton.disabled = true;
+        }
+
+        else {
+            addbutton.disabled = false;
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const weightScaleButton = document.getElementById('weightScaleButton');
+
+    weightScaleButton.addEventListener('click', function() {
+        window.location.href = 'check-in.html'; 
+    });
+    const checkInLink = document.querySelector('.bottom_nav li:nth-child(3) a'); 
+    checkInLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+       
+        window.location.href = 'check-in.html';
+    });
+});
