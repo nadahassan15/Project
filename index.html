@@ -59,28 +59,29 @@
 </div>
 
             <!-- Signup Form -->
-            <div class="signup_form">
-                <form action="#">
+           <div class="signup_form">
+                <form action="#" id="signupForm">
                     <h2>Sign Up</h2>
                     <div class="input_box">
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" id="signupEmail">
                         <i class="fa-regular fa-envelope"></i>
                     </div>
                     <div class="input_box">
-                        <input type="password" placeholder="Create password">
+                        <input type="password" placeholder="Create password" id="signupPassword">
                         <i class="fa-solid fa-lock"></i>
                     </div>
                     <div class="input_box">
-                        <input type="password" placeholder="Confirm password">
+                        <input type="password" placeholder="Confirm password" id="confirmPassword">
                         <i class="fa-solid fa-lock"></i>
                     </div>
-                    <button class="signup-button">Sign Up</button>
+                    <button type="submit" class="signup-button">Sign Up</button>
+                    <div id="signupError" style="color: red; display: none;"></div>
                     <div class="signup">
                         <span>Already have an account?</span> <a href="#" class="Login">Login</a>
                     </div>
                 </form>
             </div>
-        </div>
+           
     </section>
 <section class ="Cards" id="service">
     <h2 class="title">Services</h2>
