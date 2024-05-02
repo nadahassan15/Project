@@ -72,43 +72,22 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     const confirmPassword = document.getElementById("confirmPassword");
     const signupError = document.getElementById("signupError");
 
-    // Check if passwords match
     if (signupPassword.value === confirmPassword.value) {
-        // Store email and password in local storage
-        localStorage.setItem('userEmail', signupEmail.value);
-        localStorage.setItem('userPassword', btoa(signupPassword.value));  // Encode password with Base64 (for simplicity)
+        if (localStorage.getItem(signupEmail.value)) {
+            signupError.textContent = "Email already registered.";
+            signupError.style.display = 'block';
+        } else {
+            // Store email and password in local storage
+            localStorage.setItem(signupEmail.value, btoa(signupPassword.value)); // Encode password with Base64 for simplicity
 
-        alert("Signup successful. Your details have been saved.");
-        // Optionally clear form or redirect
-        window.location.href = 'quiz.html'; // Redirect to a new page
+            alert("Signup successful. Your details have been saved.");
+            // Optionally clear the form
+            document.getElementById("signupForm").reset();
+        }
     } else {
-        // Display error message if passwords do not match
-        signupError.style.display = 'block';
         signupError.textContent = "Passwords do not match!";
+        signupError.style.display = 'block';
     }
-    quizForm.addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission behavior
-        
-        // Get the user's answers from the form
-        const age = document.getElementById("age").value;
-        const gender = document.getElementById("gender").value;
-        const activity = document.getElementById("activity").value;
-        const goal = document.getElementById("goal").value;
-    
-        // Process the user's answers (you can replace this with your logic)
-        const result = {
-            age: age,
-            gender: gender,
-            activity: activity,
-            goal: goal
-        };
-    
-        // Display the result (you can customize this)
-        
-       // alert("Quiz submitted! Here are your answers: \n" + JSON.stringify(result));
-
-        window.location.href = 'index.html';
-    });
 });
 
 /*water*/
