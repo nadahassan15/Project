@@ -498,3 +498,228 @@ form button {
 form button:hover {
     background-color: #53c8b2;
 }
+/* home.html*/
+.container{
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    width: 100%;
+    max-width: 600px;
+    margin:auto;
+    gap:10px;
+    margin-bottom: 100px;
+   padding: 50px;
+   border-radius: 20px;
+}
+
+.water-glass{
+    width: 120px; 
+    height: auto;
+}
+
+.water-bottle {
+    width: 100px; 
+    height: auto;
+}
+.side-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.side-info span{
+    margin-top: 5px; ;
+    font-size: 20px;
+}
+.percentage-container{
+    width:100%;
+    height: 100%;
+    min-height: 300px;
+    margin: auto;
+    background-color: #a5d7fe;
+    border-radius: 5px;
+    overflow: hidden;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+}
+.progress{
+    background-color: #2196f3;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transition: 0.5s ease;
+   
+}
+.current-percentage{
+    z-index: 1;
+}
+.buttons{
+    grid-column: -1/1;
+    margin:10px auto;
+    }
+.remove,
+.add{
+background-color: #41a1ef;
+color: #fff;
+border:1px solid #a5d7fe;
+width:60px;
+height: 60px;
+font-size: 45px;
+border-radius: 50%;
+outline-style: none;
+cursor: pointer;
+}
+button:disabled{
+    background-color: #a5d7fe;
+
+}
+
+.MyHome {
+   
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+  overflow: hidden;
+  
+}
+ 
+.calories-remaining {
+    max-width: 600px;
+    margin: 100px auto 20px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #ccc;
+}
+.calories-remaining h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #000000;
+}
+.calories-remaining p{
+color: #198d66;
+font-size: 30px;
+font-weight: bold;
+}
+
+.calories-remaining .buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+.calories-remaining .buttons button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.calories-remaining .buttons button:hover {
+    background-color: #0b7dda;
+}
+.weight-scale button {
+    margin-right: 20px; 
+    font-size: 30px;
+    background-color: transparent;
+    border: none; 
+}
+.loading-item {
+    width: 400px; 
+    height: 15px; 
+    background-color: #e5e4e4;
+}
+.buttons-container {
+    display: flex;
+    align-items: center;
+}
+.goals {
+    display: flex;
+    justify-content: space-between;
+    color: #646464;
+    margin-bottom: 10px;
+}
+
+.goals span {
+    flex: 1;
+    text-align: center;
+    margin: 0 16px;
+}
+.num {
+    display: flex;
+    justify-content: space-between;
+    color: #646464;
+    margin-bottom: 15px;
+}
+
+.num span {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+.wrapper .bottom_nav,
+.wrapper .top_nav {
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .bottom_nav {
+    background-color: #1c743f;
+    height: 45px;
+}
+.wrapper .bottom_nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .bottom_nav  a {
+    color: #fff9f9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+   
+    font-size: 15px;
+}
+
+.wrapper .top_nav {
+    height: 45px;
+    background: #13a63f;
+}
+.wrapper .top_nav  ul {
+    display: flex;
+    
+}
+.wrapper .top_nav   a {
+    display: block;
+    padding: 8px 10px;
+    color: #ffffff;
+    margin: 0 12px;
+}
+.wrapper .bottom_nav  a:hover{
+    color: rgb(45, 145, 61);
+    font-weight: bold;
+}
+.header .logoo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #34ae85;
+    background-color: whitesmoke;
+    padding: 10px 100px;
+
+    
+}
