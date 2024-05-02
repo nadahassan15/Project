@@ -421,8 +421,7 @@ div p {
     font-size: 15px; 
 
 }
-body 
-{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 90px 0 0;
@@ -430,22 +429,27 @@ body
 }
 
 header {
-    background-color: rgb(245, 245, 245);
+    background-color:rgb(29, 151, 153); /* Change to your preferred color */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 70px;
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center;
+    justify-content: center;
     z-index: 100;
     padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    color: #fff; /* Change text color to white */
+    font-size: 1.0rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
 }
+
 
 form {
     max-width: 500px;
-    margin: 100px auto 20px; /* Adjust top margin to make space for the fixed header */
+    margin: 100px auto 20px; 
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -458,12 +462,21 @@ form {
 form label {
     display: block;
     margin-bottom: 10px;
-    color: #333; /* Adjust label color */
+    color: #333; 
 
 }
 
 form select,
 form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form select,
+form input[type="text"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 20px;
@@ -485,4 +498,3 @@ form button {
 form button:hover {
     background-color: #53c8b2;
 }
-
