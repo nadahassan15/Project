@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Login successful. Loading form...");
             // Example redirect or show new form
             
-            window.location.href = 'quiz.html';
+            window.location.href = 'home.html';
             
         } else {
             // Wrong email or password
