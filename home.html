@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Main Page</title>
+</head>
+<body>
+<!--header-->
+<section class="header">
+    <div class="logoo">myfitness</div>
+
+</section>
+<div class="wrapper">
+    <nav class="top_nav">
+            <ul>
+                <li><a href="#">MYHOME</a></li>
+                <li><a href="#">FOOD</a></li>
+                <li><a href="#">Exercise</a></li>
+            </ul>
+    </nav>
+    <nav class="bottom_nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">CHECK-IN</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+<section class="MyHome" id="main">
+    <div class="calories-remaining">
+        <h2>Calories Remaining</h2>
+    
+        <div class="buttons-container">
+        <div class="buttons">
+            <button class="add-food">Add Food</button>
+            <button class="add-exercise">Add Exercise</button>
+        </div>
+        </div>
+        <div class="weight-scale">
+            <button id="weightScaleButton">
+                <i class="fa-solid fa-weight-scale"></i>
+            </button>
+        </div>
+        
+        <div class="num">
+            <span> 1200</span>
+            <span>0</span>
+            <span>-</span>
+            <span>0</span>
+            <span>=</span>
+            <span>0</span>
+           
+        </div>
+        <div class="goals">
+            <span>GOAL</span>
+            <span>FOOD</span>
+            <span>EXERCISE</span>
+            <span>NET</span>
+        </div>
+        <div class="loading-item">
+            
+        </div>
+        
+    </div>
+</section>
+
+
+    <div class="container">
+        <div class="side-info">
+            <img class="water-glass" src="https://static.vecteezy.com/system/resources/previews/006/599/997/non_2x/flat-design-glass-of-water-isolated-on-white-background-free-vector.jpg">
+            <span class="current-cups">0/10</span>
+        </div>
+        <div>
+            <div class="percentage-container">
+                <span class="current-percentage">0%</span>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="side-info">
+            <img class="water-bottle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPGRg85b1F5y8XMroqb4fy_YMYOVwhgo8XMq_kSvYNkro6J3K0jGZe3GJZOzjr9VP1JE&usqp=CAU">
+            <span class="current-liters">0l/2.5l</span>
+
+        </div>
+        <div class="buttons">
+            <button class="remove" >-</button>
+            <button class="add">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
