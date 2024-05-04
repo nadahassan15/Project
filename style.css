@@ -811,3 +811,200 @@ font-weight: bold;
      height: 20px;
      text-align: center;
      }
+/food/
+.food-diary-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+.food-diary-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#diaryDate {
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #4a2abc;
+}
+
+.food-diary-container {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.meal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.meal h2 {
+    flex-basis: 20%;
+    margin: 0;
+}
+
+.actions {
+    flex-basis: 40%;
+    display: flex;
+}
+
+.nutrition-info {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.actions button {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #007bff; /* Example blue color, replace with your actual color code */
+    border: 1px solid #0056b3; /* Slightly darker border for depth, match this color to your background color */
+    color: white; /* White text color */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px; /* Makes the text slightly larger and more readable */
+    text-align: center;}
+
+
+.actions button:hover {
+    background-color: #d0d0d0;
+}
+.food-diary-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.nutrition-summary {
+    margin-top: 20px;
+}
+
+.nutrition-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-summary th, .nutrition-summary td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nutrition-summary tr:last-child td {
+    border-bottom: none;
+}
+
+.complete-entry {
+    display: block;
+    width: 10%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin: 10px auto 0 auto;  
+}
+
+.complete-entry:hover {
+    background-color: #45a049;
+}
+
+
+.add-food-page {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.add-food-page h1 {
+    text-align: center;
+    color: #333;
+}
+
+.search-section {
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.search-section input {
+    flex: 1; 
+}
+
+.search-section input, .search-section button, .favorites select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons-food {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.favorites select {
+    width: 150px; /* Adjusted width for better visibility */
+}
+.buttons-food:hover {
+    background-color: #e0e0e0;}
+
+.tabs button {
+    color: white;
+    background-color:#007bff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin:10px auto;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.tabs button:hover {
+    background-color: #e0e0e0;
+}
+
+.food-list {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #eee;
+    min-height: 100px; /* Adjust based on content */
+}
+
+.add-checked {
+    width: 20%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-checked:hover {
+    background-color: #45a049;
+}
+
+.tip {
+    font-style: italic;
+   
+
+}
