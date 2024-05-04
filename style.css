@@ -556,7 +556,7 @@ form button:hover {
 .current-percentage{
     z-index: 1;
 }
-.buttons{
+.add_remove{
     grid-column: -1/1;
     margin:10px auto;
     }
@@ -572,7 +572,7 @@ border-radius: 50%;
 outline-style: none;
 cursor: pointer;
 }
-button:disabled{
+.add_remove button:disabled{
     background-color: #a5d7fe;
 
 }
@@ -612,12 +612,12 @@ font-size: 30px;
 font-weight: bold;
 }
 
-.calories-remaining .buttons {
+.calories-remaining .food_exercise {
     display: flex;
     gap: 10px; 
 }
 
-.calories-remaining .buttons button {
+.calories-remaining .food_exercise button {
     padding: 5px 10px;
     border: none;
     background-color: #2196f3;
@@ -629,10 +629,10 @@ font-weight: bold;
     
 }
 
-.calories-remaining .buttons button:hover {
+.calories-remaining .food_exercise button:hover {
     background-color: #0b7dda;
 }
-.weight-scale button {
+.weight-scale .weight_button{
     margin-right: 20px; 
     font-size: 30px;
     background-color: transparent;
@@ -720,6 +720,8 @@ font-weight: bold;
     color: #34ae85;
     background-color: whitesmoke;
     padding: 10px 100px;
+
+    
 }
  /*exercise*/
   .btnd{
