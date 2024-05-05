@@ -1237,3 +1237,51 @@ h4{
 
 
 }
+
+/*Add Exercise*/
+ .add-exercise {
+            background-color: rgba(240, 240, 240, 0.986);
+            padding: 20px;
+            width: 60%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+            font-style: bold ;
+
+        }
+
+       .add-exercise label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+       .add-exercise input,.add-exercise select {
+            width: 30%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px inset #faf8f8;
+            border-radius: 1px;
+            box-shadow: 0 0 10px rgba(235, 231, 231, 0.1);
+
+        }
+
+       .add-exercise button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            position: fixed;
+            bottom:290px;
+            right: 87%;
+        }
+
+       .add-exercise button:hover {
+            background-color: #3e8e41;
+        }
+        h3{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+
+
