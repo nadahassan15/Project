@@ -1185,3 +1185,38 @@ font-weight: bold;
 .editButton :hover {
     background-color: #4c8c66;
 }
+
+
+
+/*myexercises*/
+
+        .exercises {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .button {
+            color:white;
+            background-color: #45a049;
+            margin-left: 90px; /*el msafa ben el gomla wel button*/
+            width:220px;
+            height: 42px;
+            font-size: 18px;
+            text-align: center;
+            border:none;
+            border-radius:4px;
+            box-shadow: black;
+
+        }
+.button:hover{
+    background-color: #3b7e3e;
+}
+h4{
+    margin-left: 30px;
+}
+.search{
+    margin: 5px 0px 5px 32px ;
+     border:none;
+     
+}
