@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Foods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container2">
+        <h1>Your Personal Foods</h1>
+        <div class="search2">
+            <input type="text" placeholder="Search your personal foods by name:" id="foodSearch">
+            <button type="submit">Search</button>
+        </div>
+        <button class="create-food">CREATE FOOD</button>
+        <div class="results">
+            <h2>Matching Foods:</h2>
+            <div class="no-results">
+                <p>There were no results for your search.</p>
+                <ul>
+                    <li>Make sure all words are spelled correctly.</li>
+                    <li>Search by ingredient.</li>
+                    <li>Try more general keywords like 'apple'.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
