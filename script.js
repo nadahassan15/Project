@@ -45,10 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
         signupForm.style.display = "none";
     });
 
-    // Login form submission handling
-    loginForm.addEventListener("submit", function(event) {
-        event.preventDefault();  // Prevent form from submitting normally
+  loginForm.addEventListener("submit", function(event) {
+        event.preventDefault();  
 
+        if (!loginEmail.value || !loginPassword.value) {
+            loginError.textContent = "Username and password are required!";
+            loginError.style.display = 'block';
+            return; 
+        }
         // Check both email and password
         if (loginEmail.value === "janakhairy@gmail.com" && loginPassword.value === "123") {
             // Correct email and password, proceed to show a new form or redirect
