@@ -1537,19 +1537,6 @@ button:hover {
 .edit-input input[type="date"] {
     width: 150px;
 }
-
-.new-entry {
-    padding: 5px 10px;
-    background-color: #5dae7d;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.new-entry:hover {
-    background-color: #4c8c66;
-}
 /*edit*/
 
 .measure input
@@ -1569,8 +1556,6 @@ button:hover {
 .measure input {
     width: 100px;
 }
-
-
 .new-entry {
     margin-top: 20px;
     padding: 10px 20px;
@@ -1580,14 +1565,10 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .new-entry:hover {
     background-color: #81aa93;
 }
-.edit-container p{
-font-size: 14px;
-}
-.measurment {
+.measurement {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -1595,7 +1576,9 @@ font-size: 14px;
     font-size: 16px;
     width: 200px; 
 }
-
+.edit-container p{
+font-size: 14px;
+}
 .edit-container p {
     font-size: 16px;
     color: #333; 
