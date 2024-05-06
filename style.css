@@ -1271,7 +1271,7 @@ h4{
             border: none;
             border-radius: 3px;
             position: fixed;
-            bottom:290px;
+            bottom:299px;
             right: 87%;
         }
 
@@ -1282,6 +1282,24 @@ h4{
             margin-top: 20px;
             margin-left: 20px;
         }
+    #p {
+             width:444px; 
+             font-size:15px;
+             position: fixed; 
+             top: 150px;
+             right: 596px;
+        }
+        h4{
+             position: fixed;
+             top: 120px;
+             right: 868px;
+        }
+
+
+
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
