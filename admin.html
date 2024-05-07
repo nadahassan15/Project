@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Admin Panel</title>
+    <!-- Add your CSS stylesheets here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>User Management - Admin Panel</h1>
+    </header>
+
+    <main>
+        <section id="userList">
+            <h2>User List</h2>
+            <!-- Display list of users here -->
+            <ul id="userListItems">
+                <!-- Each user should be displayed as list item -->
+            </ul>
+        </section>
+
+        <section id="userDetails">
+            <h2>User Details</h2>
+            <!-- Display selected user details here -->
+            <div id="userDetailsContainer">
+                <!-- User details will be shown here -->
+            </div>
+        </section>
+
+        <section id="userForm">
+            <h2>Add/Edit User</h2>
+            <!-- User form for adding/editing user details -->
+            <form id="userFormElement">
+                <!-- Form fields for user details -->
+                <label for="userName">Name:</label>
+                <input type="text" id="userName" name="userName" required>
+                <label for="userEmail">Email:</label>
+                <input type="email" id="userEmail" name="userEmail" required>
+                <label for="userRole">Role:</label>
+                <select id="userRole" name="userRole" required>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+                <!-- Buttons for submitting form and clearing fields -->
+                <button type="submit">Save</button>
+                <button type="button" id="clearFormButton">Clear</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Add your JavaScript files here -->
+    <script src="script.js"></script>
+</body>
+</html>
 
