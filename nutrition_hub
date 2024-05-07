@@ -10,17 +10,20 @@
     <div class="container">
         <h1>Nutrition Education Hub</h1>
         <div class="topics">
-            <div class="topic" onclick="location.href='#fundamentals';">
+            <div class="topic">
                 <h2>Fundamentals of Nutrition</h2>
                 <p>Learn the basics of macronutrients and micronutrients.</p>
+                <a href="https://earthwormexpress.com/wp-content/uploads/2019/01/fundamentals-of-nutrition.pdf" target="_blank">Click here</a>
             </div>
             <div class="topic" onclick="location.href='#guidelines';">
                 <h2>Dietary Guidelines</h2>
                 <p>Explore guidelines tailored to various demographics.</p>
+                 <a href="https://www.sciencedirect.com/science/article/pii/S2161831322004033" target="_blank">Click here</a>  
             </div>
             <div class="topic" onclick="location.href='#diets';">
                 <h2>Special Diets</h2>
                 <p>Insights into vegan, keto, and other diets.</p>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10184023/" target="_blank">Click here</a>  
             </div>
             <div class="topic" onclick="location.href='#mealplanning';">
                 <h2>Meal Planning and Recipes</h2>
@@ -37,6 +40,7 @@
             <div class="topic" onclick="location.href='#preventivenutrition';">
                 <h2>Preventive Nutrition</h2>
                 <p>How diet can help manage chronic diseases.</p>
+                <a href="https://www.youtube.com/watch?v=qIWQQ_bgHKY&pp=ygU_UHJldmVudGl2ZSBOdXRyaXRpb24gSG93IGRpZXQgY2FuIGhlbHAgbWFuYWdlIGNocm9uaWMgZGlzZWFzZXMu" target="_blank">Click here</a>
             </div>
         </div>
     </div>
