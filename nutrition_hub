@@ -28,14 +28,17 @@
             <div class="topic" onclick="location.href='#mealplanning';">
                 <h2>Meal Planning and Recipes</h2>
                 <p>Plan meals with nutritious recipes.</p>
+                <a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5288891/ target="_blank">Click here</a>
             </div>
             <div class="topic" onclick="location.href='#weightmanagement';">
                 <h2>Weight Management</h2>
                 <p>Advice on balancing energy and maintaining weight.</p>
+                <a href= https://www.youtube.com/watch?v=k5Y9D37KmJo&pp=ygU4YWR2aWNlIGFib3V0IG9uIGJhbGFuY2luZyBlbmVyZ3kgYW5kIG1haW50YWluaW5nIHdlaWdodC4%3D target="_blank">Click here</a>
             </div>
             <div class="topic" onclick="location.href='#sportsnutrition';">
                 <h2>Sports Nutrition</h2>
                 <p>Tips for athletic performance and recovery.</p>
+                <a href= https://www.betterhealth.vic.gov.au/health/healthyliving/sporting-performance-and-food target="_blank">Click here</a>
             </div>
             <div class="topic" onclick="location.href='#preventivenutrition';">
                 <h2>Preventive Nutrition</h2>
