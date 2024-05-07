@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+ }
 .home {
     width: 100%;
     display: flex;
@@ -56,7 +56,6 @@ a{
 }
 .logo{
     font-size: 40px;
-   /* color:rgb(29, 153, 120);*/
      color:rgb(20, 138, 20);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -79,15 +78,12 @@ margin: 0 auto;
     column-gap: 25px;
 }
 .nav_item a{
-    /*color:  rgb(29, 151, 153);*/
         color:rgb(20, 138, 20);
 }
 .nav_item a:hover{
-   /* color: white;*/
      color: rgb(57, 54, 54);
 }
 .button{
-    /*color: rgb(29, 151, 153);*/
     color:rgb(20, 138, 20);
     padding:  6px 24px;
     border: 2px solid rgb(20, 138, 20);
@@ -137,26 +133,7 @@ margin: 0 auto;
 img {
     display: block;
 }
-/*.image-home{
-    overflow: hidden;
-    position: relative;
-    border-radius: 0 0 0 50px; /* Rounded border on the left side */
-    /*width: 50%; /* Set width to occupy 30% of the parent container */
-    /*float: right; /* Float the container to the right
-    margin-right: 20px; 
-  height: 70%;
 
-}
- 
-.image-home img{
-    width: 100%;
-    display: block; /* Ensure the image is displayed as a block element */
-   /* z-index: 1; /* Ensure the image is above other elements */
-    /*height: 100%;
-    object-fit: cover; /* Cover the entire container without distortion 
-
-}
-*/
 /* start now button*/
  .main-btn{
    
@@ -175,9 +152,7 @@ img {
     width: 100%;
   
     z-index: inherit;
-   /* opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s ease-out;*/
+  
 }
 
 /*.home.show::before{
