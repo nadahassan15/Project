@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charts and Reports</title>
-    <link rel="stylesheet" href="reportstyle.css"></head>
+    <link rel="stylesheet" href="reportstyle.css">
+</head>
 <body>
-    <h1>Charts and Reports</h1>
+    <div class="container">
+        <h1 class="header">MyFitness</h1>
 
-    <label for="reportType">Choose a report:</label>
-    <select id="reportType">
-        <option value="weight">Weight</option>
-    </select>
+        <label for="reportType">Choose a report:</label>
+        <select id="reportType">
+            <option value="weight">Weight</option>
+        </select>
 
-    <label for="reportPeriod">Reporting period:</label>
-    <select id="reportPeriod">
-        <option value="7">Last 7 days</option>
-        <option value="30">Last 30 days</option>
-        <option value="90">Last 90 days</option>
-        <option value="180">Last 180 days</option>
-        <option value="365">Last year</option>
-    </select>
+        <label for="reportPeriod">Reporting period:</label>
+        <select id="reportPeriod">
+            <option value="7">Last 7 days</option>
+            <option value="30">Last 30 days</option>
+            <option value="90">Last 90 days</option>
+            <option value="180">Last 180 days</option>
+            <option value="365">Last year</option>
+        </select>
 
-    <button onclick="generateReport()">Generate Report</button>
+        <button onclick="generateReport()">Generate Report</button>
 
-    <div id="reportOutput">
+        <div id="reportOutput">
+        </div>
     </div>
 
     <script>
@@ -33,9 +36,27 @@
             const reportPeriod = document.getElementById("reportPeriod").value;
 
             const reportOutput = document.getElementById("reportOutput");
-            reportOutput.innerHTML = `<p>Generating ${reportType} report for the last ${reportPeriod} days...</p>`;
+
+           
+            const reportData = [
+                { date: '2024-05-01', value: 70 },
+                { date: '2024-05-02', value: 69.5 },
+                { date: '2024-05-03', value: 69 },
+            ];
+
+            const startDate = new Date();
+            startDate.setDate(startDate.getDate() - reportPeriod);
+            const filteredData = reportData.filter(entry => new Date(entry.date) >= startDate);
+
+            let reportHTML = `<p>${reportType} report for the last ${reportPeriod} days:</p>`;
+            reportHTML += "<ul>";
+            filteredData.forEach(entry => {
+                reportHTML += `<li>Date: ${entry.date}, Value: ${entry.value}</li>`;
+            });
+            reportHTML += "</ul>";
+
+            reportOutput.innerHTML = reportHTML;
         }
     </script>
 </body>
 </html>
-
