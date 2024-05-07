@@ -61,9 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
             
             window.location.href = 'home.html';
             
-        } else {
-            // Wrong email or password
-            loginError.style.display = 'block'; // Show the error message
+        }else if
+            (loginEmail.value === "rawan@gmail.com" && loginPassword.value === "19") {
+                alert("Login successful. Loading form...");
+                window.location.href = 'admin.html';
+
+        }else {
+           
+            loginError.style.display = 'block'; 
             loginError.textContent = "Wrong email or password!";
         }
     });
@@ -165,7 +170,30 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'check-in.html';
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const changeButton = document.querySelector('.change-weight');
+    const measurementSelect = document.getElementById('measurementSelect');
 
+    changeButton.addEventListener("click", function() {
+        const selectedMeasurement = measurementSelect.value;
+                let pageURL;
+        switch (selectedMeasurement) {
+            case "neck":
+                pageURL = "edit-neck.html";
+                break;
+            case "waist":
+                pageURL = "edit-waist.html";
+                break;
+            case "hips":
+                pageURL = "edit-hips.html";
+                break;
+            default:
+                pageURL = "edit-measurement.html"; 
+        }
+
+        window.location.href = pageURL;
+    });
+});
 /*exerciseDB js*/
  var modal = document.getElementById("myModal");
     var span = document.getElementsByClassName("close")[0];
