@@ -29,14 +29,11 @@
 
     <script>
         function generateReport() {
-            // Get selected report type and period
             const reportType = document.getElementById("reportType").value;
             const reportPeriod = document.getElementById("reportPeriod").value;
 
-            // Example of generating a report based on selections
             const reportOutput = document.getElementById("reportOutput");
             reportOutput.innerHTML = `<p>Generating ${reportType} report for the last ${reportPeriod} days...</p>`;
-            // Here you would add code to fetch and generate the actual report data
         }
     </script>
 </body>
