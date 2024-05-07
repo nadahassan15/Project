@@ -1216,9 +1216,6 @@ font-weight: bold;
     cursor: pointer;
     font-size: 16px;
 }
-.editButton :hover {
-    background-color: #4c8c66;
-}
 
 .save-button{
     display: block;
@@ -1230,10 +1227,6 @@ font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-}
-
-.save-button :hover {
-    background-color: #4c8c66;
 }
 
 /*myexercises*/
