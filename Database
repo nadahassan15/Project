@@ -7,6 +7,26 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <div class="wrapper">
+        <nav class="top_nav">
+            <ul>
+              <li><a href="home.html">MyHome</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="excersice.html">Exercise</a></li>
+              <li><a href="reports.html">Reports</a></li>
+              <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
+
+            </ul>
+        </nav>
+        <nav class="bottom_nav">
+            <ul>
+              <li><a href="food.html">Food diary</a></li>
+              <li><a href="database.html">Database</a></li>
+              <li><a href="Myfood.html">Myfood</a></li>
+          
+            </ul>
+        </nav>
+   
 <div class="headerr">
   <h1>Calorie Chart, Nutrition Facts for Food</h1>
   <div class="search-box">
