@@ -210,3 +210,36 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.style.display = "none";
         }
     };
+function sendMessage() {
+    var userInput = document.getElementById('user-input').value;
+    if (!userInput.trim()) return; 
+    appendMessage('You: ' + userInput);
+    document.getElementById('user-input').value = ''; 
+
+    setTimeout(function() {
+        var botResponse = getBotResponse(userInput);
+        appendMessage('Bot: ' + botResponse);
+    }, 500);
+}
+
+function appendMessage(message) {
+    var chatBox = document.getElementById('chat-box');
+    var messageElement = document.createElement('div');
+    messageElement.textContent = message;
+    chatBox.appendChild(messageElement);
+    chatBox.scrollTop = chatBox.scrollHeight; 
+}
+
+function getBotResponse(userInput) {
+    var responses = {
+        'hi': 'Hello there!',
+        'how are you': 'I\'m doing well, thank you!',
+        'bye': 'Goodbye!',
+        'what is my current weight?': 'Your current weight is 150 lbs.',
+        'what is my target weight?': 'Your target weight is 140 lbs.',
+        'default': 'I\'m sorry, I didn\'t understand that.'
+    };
+
+    userInput = userInput.toLowerCase();
+    return responses[userInput] || responses['default'];
+}
