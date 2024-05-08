@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <section class="header">
+        <div class="logoo">myfitness</div>
+    </section>
+    <div class="wrapper">
+        <nav class="top_nav">
+            <ul>
+                <li><a href="home.html">MyHome</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="excersice.html">Exercise</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
+   
+            </ul>
+        </nav>
+        <nav class="bottom_nav">
+            <ul>
+                <li><a href="food.html">Food diary</a></li>
+                <li><a href="database.html">Database</a></li>
+                <li><a href="Myfood.html">Myfood</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="container2">
         <h1>Your Personal Foods</h1>
         <div class="search2">
