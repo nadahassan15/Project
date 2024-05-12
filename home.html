@@ -13,25 +13,26 @@
     <div class="logoo">myfitness</div>
 
 </section>
-<div class="wrapper">
-    <nav class="top_nav">
+
+    <div class="wrapper">
+        <nav class="top_nav">
             <ul>
-                <li><a href="#">MYHOME</a></li>
-                <li><a href="#">FOOD</a></li>
-                <li><a href="#">Exercise</a></li>
+                <li><a href="home.html">MyHome</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="excersice.html">Exercise</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>  
             </ul>
-    </nav>
-    <nav class="bottom_nav">
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PROFILE</a></li>
-            <li><a href="#">CHECK-IN</a></li>
-        </ul>
-    </nav>
-</div>
-
-
-
+        </nav>
+        <nav class="bottom_nav">
+            <ul>
+                    <li><a href="home.html">HOME</a></li>
+                 <li><a href="#profile">PROFILE</a></li>
+                <li><a href="check-in.html">check-in</a></li>
+                <li><a href="chat.html" >CHAT</a></li>
+            </ul>
+        </nav>
+    </div>
 
 <section class="MyHome" id="main">
     <div class="calories-remaining">
@@ -39,12 +40,12 @@
     
        <div class="buttons-container">
         <div class="food_exercise">
-            <button class="add-food">Add Food</button>
-            <button class="add-exercise">Add Exercise</button>
+            <button onclick="window.location.href='food.html'" class="add-food">Add Food</button>
+            <button onclick="window.location.href='excersice.html'" class="add-excersice">Add excersice</button>
         </div>
         </div>
         <div class="weight-scale">
-            <button class="weight_button"id="weightScaleButton">
+      <button id="weightScaleButton" class="weight_button">
                 <i class="fa-solid fa-weight-scale"></i>
             </button>
         </div>
@@ -52,7 +53,7 @@
         <div class="num">
             <span> 1200</span>
             <span>0</span>
-            <span>-</span>
+       <span>-</span>
             <span>0</span>
             <span>=</span>
             <span>0</span>
@@ -72,27 +73,7 @@
 </section>
 
 
-    <div class="container">
-        <div class="side-info">
-            <img class="water-glass" src="https://static.vecteezy.com/system/resources/previews/006/599/997/non_2x/flat-design-glass-of-water-isolated-on-white-background-free-vector.jpg">
-            <span class="current-cups">0/10</span>
-        </div>
-        <div>
-            <div class="percentage-container">
-                <span class="current-percentage">0%</span>
-                <div class="progress"></div>
-            </div>
-        </div>
-        <div class="side-info">
-            <img class="water-bottle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPGRg85b1F5y8XMroqb4fy_YMYOVwhgo8XMq_kSvYNkro6J3K0jGZe3GJZOzjr9VP1JE&usqp=CAU">
-            <span class="current-liters">0l/2.5l</span>
 
-        </div>
-       <div class="add_remove">
-            <button class="remove" >-</button>
-            <button class="add">+</button>
-        </div>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
