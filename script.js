@@ -99,7 +99,6 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     }
 });
 
-/*water*/
 const addbutton=document.querySelector('.add');
 const removebutton=document.querySelector('.remove');
 const currentcups=document.querySelector('.current-cups');
@@ -128,9 +127,7 @@ function addCup() {
 
         if (cups === MAX_CUPS) {
             addbutton.disabled = true;
-        }
-
-       else {
+        } else {
             removebutton.disabled = false;
         }
     }
@@ -148,9 +145,7 @@ function removeCup() {
 
         if (cups === MIN_CUPS) {
             removebutton.disabled = true;
-        }
-
-        else {
+        } else {
             addbutton.disabled = false;
         }
     }
