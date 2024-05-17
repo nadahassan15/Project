@@ -181,12 +181,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const weightScaleButton = document.getElementById('weightScaleButton');
 
     weightScaleButton.addEventListener('click', function() {
-        window.location.href = 'check-in.html'; 
+        window.location.href = 'check in.html'; 
     });
     const checkInLink = document.querySelector('.bottom_nav li:nth-child(3) a'); 
     checkInLink.addEventListener('click', function(event) {
         event.preventDefault();
-        window.location.href = 'check-in.html';
+        window.location.href = 'check in.html';
     });
     
     
