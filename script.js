@@ -7,16 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const formContainer = document.querySelector(".form_container");
     const formCloser = document.querySelector(".form_closer");
     const loginEmail = document.getElementById("loginEmail");
-    const loginPassword = document.getElementById("loginPassword"); // Correct ID for password
+    const loginPassword = document.getElementById("loginPassword");
     const loginError = document.getElementById("loginError");
-    const quizForm = document.getElementById("quizForm");
-    
-    // Initially hide the form container and both forms
+
     formContainer.style.display = "none";
     loginForm.style.display = "none";
     signupForm.style.display = "none";
 
-    // Event listener for the Start Now button
     startNowButton.addEventListener("click", function(event) {
         event.preventDefault();
         formContainer.style.display = "block";
@@ -24,28 +21,23 @@ document.addEventListener("DOMContentLoaded", function() {
         signupForm.style.display = "none";
     });
 
-    // Event listener for the Sign up link in the login form
     signupButton.addEventListener("click", function(event) {
         event.preventDefault();
         loginForm.style.display = "none";
         signupForm.style.display = "block";
     });
-
-    // Event listener for the Login link in the signup form
     loginButton.addEventListener("click", function(event) {
         event.preventDefault();
         signupForm.style.display = "none";
         loginForm.style.display = "block";
     });
-
-    // Event listener for the close button in the form container
     formCloser.addEventListener("click", function() {
         formContainer.style.display = "none";
         loginForm.style.display = "none";
         signupForm.style.display = "none";
     });
 
-  loginForm.addEventListener("submit", function(event) {
+    loginForm.addEventListener("submit", function(event) {
         event.preventDefault();  
 
         if (!loginEmail.value || !loginPassword.value) {
@@ -53,51 +45,86 @@ document.addEventListener("DOMContentLoaded", function() {
             loginError.style.display = 'block';
             return; 
         }
-        // Check both email and password
+
         if (loginEmail.value === "janakhairy@gmail.com" && loginPassword.value === "123") {
-            // Correct email and password, proceed to show a new form or redirect
             alert("Login successful. Loading form...");
-            // Example redirect or show new form
-            
             window.location.href = 'home.html';
-            
-        }else if
+
+        } 
+        else if
             (loginEmail.value === "rawan@gmail.com" && loginPassword.value === "19") {
                 alert("Login successful. Loading form...");
                 window.location.href = 'admin.html';
 
         }else {
-           
+        
             loginError.style.display = 'block'; 
             loginError.textContent = "Wrong email or password!";
         }
     });
-});
-document.getElementById("signupForm").addEventListener("submit", function(event) {
-    event.preventDefault();  // Prevent form from submitting normally
 
-    const signupEmail = document.getElementById("signupEmail");
-    const signupPassword = document.getElementById("signupPassword");
-    const confirmPassword = document.getElementById("confirmPassword");
-    const signupError = document.getElementById("signupError");
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+        event.preventDefault();  
 
-    if (signupPassword.value === confirmPassword.value) {
-        if (localStorage.getItem(signupEmail.value)) {
-            signupError.textContent = "Email already registered.";
+        const signupEmail = document.getElementById("signupEmail");
+        const signupPassword = document.getElementById("signupPassword");
+        const confirmPassword = document.getElementById("confirmPassword");
+        const signupError = document.getElementById("signupError");
+
+        if (!signupEmail.value || !signupPassword.value || !confirmPassword.value) {
+            signupError.textContent = "All fields are required!";
             signupError.style.display = 'block';
-        } else {
-            // Store email and password in local storage
-            localStorage.setItem(signupEmail.value, btoa(signupPassword.value)); // Encode password with Base64 for simplicity
-
-            alert("Signup successful. Your details have been saved.");
-            // Optionally clear the form
-            document.getElementById("signupForm").reset();
+            return; 
         }
-    } else {
-        signupError.textContent = "Passwords do not match!";
-        signupError.style.display = 'block';
-    }
+
+        if (signupPassword.value === confirmPassword.value) {
+            if (localStorage.getItem(signupEmail.value)) {
+                signupError.textContent = "Email already registered.";
+                signupError.style.display = 'block';
+            } else {
+                localStorage.setItem(signupEmail.value, btoa(signupPassword.value));
+
+                alert("Signup successful. Your details have been saved.");
+
+                document.getElementById("signupForm").reset();
+
+                window.location.href = 'quiz.html';
+            }
+        } else {
+            signupError.textContent = "Passwords do not match!";
+            signupError.style.display = 'block';
+        }
+    });
+
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const changeButton = document.querySelector('.change-weight');
+    const measurementSelect = document.getElementById('measurementSelect');
+
+    changeButton.addEventListener("click", function() {
+        const selectedMeasurement = measurementSelect.value;
+        
+        let pageURL;
+        switch (selectedMeasurement) {
+            case "neck":
+                pageURL = "edit-neck.html";
+                break;
+            case "waist":
+                pageURL = "edit-waist.html";
+                break;
+            case "hips":
+                pageURL = "edit-hips.html";
+                break;
+            default:
+                pageURL = "edit-measurement.html"; 
+        }
+
+        window.location.href = pageURL;
+    });
+});
+
+
+
 
 const addbutton=document.querySelector('.add');
 const removebutton=document.querySelector('.remove');
@@ -150,7 +177,6 @@ function removeCup() {
         }
     }
 }
-
 document.addEventListener("DOMContentLoaded", function() {
     const weightScaleButton = document.getElementById('weightScaleButton');
 
@@ -160,51 +186,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const checkInLink = document.querySelector('.bottom_nav li:nth-child(3) a'); 
     checkInLink.addEventListener('click', function(event) {
         event.preventDefault();
-        
-       
         window.location.href = 'check-in.html';
     });
+    
+    
 });
-document.addEventListener("DOMContentLoaded", function() {
-    const changeButton = document.querySelector('.change-weight');
-    const measurementSelect = document.getElementById('measurementSelect');
+quizForm.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-    changeButton.addEventListener("click", function() {
-        const selectedMeasurement = measurementSelect.value;
-                let pageURL;
-        switch (selectedMeasurement) {
-            case "neck":
-                pageURL = "edit-neck.html";
-                break;
-            case "waist":
-                pageURL = "edit-waist.html";
-                break;
-            case "hips":
-                pageURL = "edit-hips.html";
-                break;
-            default:
-                pageURL = "edit-measurement.html"; 
-        }
-
-        window.location.href = pageURL;
-    });
+    if (validateForm()) {
+        alert("Quiz submitted!");
+        window.location.href = 'home.html';
+    } else {
+        alert("Please answer all questions before submitting the quiz.");
+    }
 });
-/*exerciseDB js*/
- var modal = document.getElementById("myModal");
-    var span = document.getElementsByClassName("close")[0];
-    document.getElementById("exerciseSelected").addEventListener("change", function() {
-        if (this.value !== "Select") {
-            modal.style.display = "block";
-        }
-    });
-    span.onclick = function() {
-        modal.style.display = "none";
-    };
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
 function sendMessage() {
     var userInput = document.getElementById('user-input').value;
     if (!userInput.trim()) return; 
