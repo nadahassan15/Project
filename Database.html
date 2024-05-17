@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calorie Chart</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Chart</title>
+    <link rel="stylesheet" href="myfooddb.css">
 </head>
 <body>
- <div class="wrapper">
+    <section class="header">
+        <div class="logoo">myfitness</div>
+    </section>
+
+    <div class="wrapper">
         <nav class="top_nav">
             <ul>
               <li><a href="home.html">MyHome</a></li>
@@ -15,7 +19,6 @@
               <li><a href="excersice.html">Exercise</a></li>
               <li><a href="reports.html">Reports</a></li>
               <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
-                <li><a href="chat.html">Chat</a></li>
 
             </ul>
         </nav>
@@ -27,16 +30,21 @@
           
             </ul>
         </nav>
-   
-<div class="headerr">
-  <h1>Calorie Chart, Nutrition Facts for Food</h1>
-  <div class="search-box">
-    <input type="search" placeholder="Search for a food, brand, or restaurant">
-    <button type="submit">Search</button>
-  </div>
-</div>
-<div class="contents">
-  <h2>Matching Foods:</h2>
-</div>
+    </div>
+
+    <!-- Added Section for Calorie Chart, Nutrition Facts for Food -->
+    <section class="calorie-chart">
+        <h1>Calorie Chart, Nutrition Facts for Food</h1>
+        <form class="search-form">
+            <input type="search" placeholder="Search for a food, brand, or restaurant">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Section for Listing Matching Foods -->
+    <section class="food-list">
+        <h2>Matching Foods:</h2>
+        <!-- Dynamic list of matching foods will be inserted here -->
+    </section>
 </body>
 </html>
