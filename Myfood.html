@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="fooddb.css">
 </head>
 <body>
- <section class="header">
+    <section class="header">
         <div class="logoo">myfitness</div>
     </section>
     <div class="wrapper">
@@ -17,7 +17,7 @@
                 <li><a href="food.html">Food</a></li>
                 <li><a href="excersice.html">Exercise</a></li>
                 <li><a href="reports.html">Reports</a></li>
-                <li><a href="nutrition_hub.html">Nutrition-Hub</a></li>
+                <li><a href="nutrition-hub.html">Nutrition-Hub</a></li>
    
             </ul>
         </nav>
@@ -29,14 +29,14 @@
             </ul>
         </nav>
     </div>
-    <div class="container2">
+    <div class="personal-foods-container">
         <h1>Your Personal Foods</h1>
-        <div class="search2">
-            <input type="text" placeholder="Search your personal foods by name:" id="foodSearch">
+        <form class="personal-foods-search">
+            <input type="search" placeholder="Search your personal foods by name:">
             <button type="submit">Search</button>
-        </div>
-        <button class="create-food">CREATE FOOD</button>
-        <div class="results">
+        </form>
+        <button class="create-food-btn">CREATE FOOD</button>
+        <div class="food-results">
             <h2>Matching Foods:</h2>
             <div class="no-results">
                 <p>There were no results for your search.</p>
@@ -46,7 +46,7 @@
                     <li>Try more general keywords like 'apple'.</li>
                 </ul>
             </div>
-        </div>
+        </div> 
     </div>
 </body>
 </html>
